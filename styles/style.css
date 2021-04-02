@@ -7,9 +7,27 @@
 
 h1 {
     font-weight: 400;
-    font-size: 60px;
-    margin: 0 auto;
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Navbar */
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
 /* main heading */
 .main-heading {
     padding: 20px;
@@ -35,6 +53,12 @@ h1 {
      border-radius: 0 0 20px 20px;
  }
 
+ #items {
+     border: 2px solid rgb(40,167,69, 50%);
+     border-radius: 20px;
+     padding-right: 1px;
+ }
+
 
  /* Inputs */
  .amount {
@@ -53,9 +77,11 @@ input.btn-primary {
  }
 
  .inputs {
-     display: flex;
+    display: flex;
     justify-content:center ;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
  }
 
  .fa-heart:hover {
@@ -79,6 +105,7 @@ input.btn-primary {
  }
 
  .total h3 {
+     display: inline-block;
      border-bottom: 2px solid;
      margin-bottom: 30px;
  }

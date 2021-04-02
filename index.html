@@ -10,28 +10,30 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="container-fluid">
-            <h1 class="navbar-brand">LOGO</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <h1>
+            <a class="navbar-brand" href="#">
+                <img src="res/ZH style 2 WIP3pdf.jpg" alt="Logo">
+            </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Cart</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <main>
@@ -39,102 +41,102 @@
             Shopping Cart
         </h2>
         <div class="row">
-            <div class="container col-7 offset-1" id="items">
+            <div class="container col col-md-7 offset-1" id="items">
                 <div class="row item " data-item="1">
-                    <h4 class="col-12">
-                        item 1
+                    <h4 class="col-12 text-center text-md-left pl-md-4">
+                        Lego Pirate
                     </h4>
-                    <div class="row col">
-                        <img class="col-3" src="res/lego pirate.png" alt="Lego Pirate">
-                        <p class="col-9">
+                    <div class="row col-12">
+                        <img class="col col-md-3 mb-2 mb-md-1" src="res/lego pirate.png" alt="Lego Pirate">
+                        <p class="col col-md-9 d-none d-sm-inline-block">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Duis at tellus at urna condimentum mattis pellentesque. 
                         </p>
                         <div class="row col-12">
-                            <div class="fav col-1">
+                            <div class="fav col-6 col-sm-1 col-md-1">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="del col-2">
+                            <div class="del col-6 col-sm-3 col-md-2">
                                 Delete
                             </div>
-                            <div class="col-3">
-                               Price: $ <span class="price">10</span>
+                            <div class="col col-sm-3 col-md-2 mt-1">
+                               Price: $<span class="price">10</span>
                             </div>
-                            <div class="col-4 offset-2 inputs">
-                                <input class="btn btn-primary minus" type="button" value="-">
-                                <input class="amount" value="1">
-                                <input class="btn btn-primary plus" type="button" value="+">
+                            <div class="row col-12 col-sm-12 col-md-5 offset-sm-1 offset-md-2 inputs ml-4 mr-auto pl-1 pr-1">
+                                <input class="btn btn-primary minus col-4 col-md" type="button" value="-">
+                                <input class="amount col-2 col-md" value="1">
+                                <input class="btn btn-primary plus col-4 col-md" type="button" value="+">
                             </div>
                         </div>
                     </div> 
                 </div>
                 <div class="row item " data-item="2">
-                    <h4 class="col-12">
-                        item 2
+                    <h4 class="col-12 text-center text-md-left pl-md-4">
+                        Lego Samurai
                     </h4>
                     <div class="row col">
-                        <img class="col-3" src="res/lego samurai.png" alt="Lego samurai">
-                        <p class="col-9">
+                        <img class="col col-md-3 mb-2 mb-md-1" src="res/lego samurai.png" alt="Lego samurai">
+                        <p class="col col-md-9 d-none d-sm-inline-block">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Duis at tellus at urna condimentum mattis pellentesque. 
                         </p>
                         <div class="row col-12">
-                            <div class="fav col-1">
+                            <div class="fav col-6 col-sm-1 col-md-1">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="del col-2">
+                            <div class="del col-6 col-sm-3 col-md-2">
                                 Delete
                             </div>
-                            <div class="col-3">
-                               Price: $ <span class="price">10</span>
+                            <div class="col col-sm-3 col-md-2 mt-1">
+                               Price: $<span class="price">10</span>
                             </div>
-                            <div class="col-4 offset-2 inputs">
-                                <input class="btn btn-primary minus" type="button" value="-">
-                                <input class="amount" value="1">
-                                <input class="btn btn-primary plus" type="button" value="+">
+                            <div class="row col-12 col-sm-12 col-md-5 offset-sm-1 offset-md-2 inputs ml-4 mr-auto pl-1 pr-1">
+                                <input class="btn btn-primary minus col-4" type="button" value="-">
+                                <input class="amount col-2" value="1">
+                                <input class="btn btn-primary plus col-4" type="button" value="+">
                             </div>
                         </div>
                     </div> 
                 </div>
                 <div class="row item " data-item="3">
-                    <h4 class="col-12">
-                        item 3
+                    <h4 class="col-12 text-center text-md-left pl-md-4">
+                        Lego Car
                     </h4>
                     <div class="row col">
-                        <img class="col-3" src="res/item 3.png" alt="Lego Car">
-                        <p class="col-9">
+                        <img class="col col-md-3 mb-2 mb-md-1" src="res/item 3.png" alt="Lego Car">
+                        <p class="col col-md-9 d-none d-sm-inline-block">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Duis at tellus at urna condimentum mattis pellentesque. 
                         </p>
                         <div class="row col-12">
-                            <div class="fav col-1">
+                            <div class="fav col-6 col-sm-1 col-md-1">
                                 <i class="far fa-heart"></i>
                             </div>
-                            <div class="del col-2">
+                            <div class="del col-6 col-sm-3 col-md-2">
                                 Delete
                             </div>
-                            <div class="col-3">
-                               Price: $ <span class="price">10</span>
+                            <div class="col col-sm-3 col-md-2 mt-1">
+                               Price: $<span class="price">10</span>
                             </div>
-                            <div class="col-4 offset-2 inputs">
-                                <input class="btn btn-primary minus" type="button" value="-">
-                                <input class="amount" value="1">
-                                <input class="btn btn-primary plus" type="button" value="+">
+                            <div class="row col-12 col-sm-12 col-md-5 offset-sm-1 offset-md-2 inputs ml-4 mr-auto pl-1 pr-1">
+                                <input class="btn btn-primary minus col-4" type="button" value="-">
+                                <input class="amount col-2" value="1">
+                                <input class="btn btn-primary plus col-4" type="button" value="+">
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>
-            <aside class="container col-3 total">
+            <aside class="container col-12 col-md-3 total">
                 <h3>Total</h3>
                 <div>
                     <p>
                         $ <span id ="total">30</span>
                     </p>
-                    <button class="btn btn-success">Check out</button>
+                    <button class="btn btn-success btn-sm">Check out</button>
                 </div>
             </aside>
         </div>
