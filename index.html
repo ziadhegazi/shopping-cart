@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://kit.fontawesome.com/f2bc1531ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">LOGO</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h2>
+            Shopping Cart
+        </h2>
+        <div class="row">
+            <div class="container col-7 offset-1" id="items">
+                <div class="row item " data-item="1">
+                    <h4 class="col-12">
+                        item 1
+                    </h4>
+                    <div class="row col">
+                        <img class="col-3" src="res/lego pirate.png" alt="Lego Pirate">
+                        <p class="col-9">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Duis at tellus at urna condimentum mattis pellentesque. 
+                        </p>
+                        <div class="row col-12">
+                            <div class="fav col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="del col-2">
+                                Delete
+                            </div>
+                            <div class="col-3">
+                               Price: $ <span class="price">10</span>
+                            </div>
+                            <div class="col-4 offset-2 inputs">
+                                <input class="btn btn-primary minus" type="button" value="-">
+                                <input class="amount" value="1">
+                                <input class="btn btn-primary plus" type="button" value="+">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row item " data-item="2">
+                    <h4 class="col-12">
+                        item 2
+                    </h4>
+                    <div class="row col">
+                        <img class="col-3" src="res/lego samurai.png" alt="Lego samurai">
+                        <p class="col-9">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Duis at tellus at urna condimentum mattis pellentesque. 
+                        </p>
+                        <div class="row col-12">
+                            <div class="fav col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="del col-2">
+                                Delete
+                            </div>
+                            <div class="col-3">
+                               Price: $ <span class="price">10</span>
+                            </div>
+                            <div class="col-4 offset-2 inputs">
+                                <input class="btn btn-primary minus" type="button" value="-">
+                                <input class="amount" value="1">
+                                <input class="btn btn-primary plus" type="button" value="+">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row item " data-item="3">
+                    <h4 class="col-12">
+                        item 3
+                    </h4>
+                    <div class="row col">
+                        <img class="col-3" src="res/item 3.png" alt="Lego Car">
+                        <p class="col-9">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Duis at tellus at urna condimentum mattis pellentesque. 
+                        </p>
+                        <div class="row col-12">
+                            <div class="fav col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="del col-2">
+                                Delete
+                            </div>
+                            <div class="col-3">
+                               Price: $ <span class="price">10</span>
+                            </div>
+                            <div class="col-4 offset-2 inputs">
+                                <input class="btn btn-primary minus" type="button" value="-">
+                                <input class="amount" value="1">
+                                <input class="btn btn-primary plus" type="button" value="+">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <aside class="container col-3 ">
+                <h3>Total</h3>
+                <div>
+                    <p>
+                        $ <span id ="total">30</span>
+                    </p>
+                    <button class="btn btn-success">Check out</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
